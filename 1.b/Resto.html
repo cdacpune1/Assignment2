@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        Restaurant 
+        </title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+              
+        
+        
+    </head>
+<body  background ="img/a2.jpg" onload="javascript:hideTable()">
+    <h1><marquee><font color="white"> Jambo Restaurant</font></marquee></h1><hr>
+<div align="center">  
+  <div style="float:left" id="d1">
+        <h1><font color="white">Book Your Table</font></h1>
+        <!-- <fieldset class="field1">-->
+       <table class="mytable">
+           
+        <tr >
+            
+    <td colspan="2"> <input type="button"value = "table1"class="button" onclick="fun()"   value="show"id="b1"></td>
+            <td> <input type="button"value = "table2" class="button" onclick= "hideTable()"></td>
+            <td> <input type="button"value = "table3" class="button" onclick="hideTable()"></td>
+            <td> <input type="button"value = "table4" class="button" onclick="hideTable()"></td>
+            
+        </tr>  
+         <tr>
+                <td colspan="2"> <input type="button"value = "table5"class="button"></td>
+                <td> <input type="button"value = "table6"class="button" onclick="hideTable()"></td>
+                <td> <input type="button"value = "table7"class="button" onclick="hideTable()"></td>
+                <td> <input type="button"value = "table8"class="button" onclick="hideTable()"></td>
+    
+         </tr>   
+        </table>
+        <script>
+           function fun(){
+               console.log("Helloword", document.getElementById("tab1"));
+                document.getElementById("tab1").style.visibility = "visible";
+            }
+            
+            function hideTable(){
+
+                    document.getElementById("tab1").style.visibility = "hidden";
+}
+            </script>
+           
+</div> 
+<div style="float:right"id="d2">
+          
+<table  id="tab1">
+
+        <tr>
+                <th>Item</th>
+                <th>Price</th>
+        </tr>
+              <tr>
+                <td>Burger</td>
+                <td>80/-</td>
+                
+              </tr>
+              <tr>
+                <td>Coffee</td>
+                <td>60/-</td>
+              </tr>
+        <br>
+               
+                <tr>
+                  <td>  <input type="button" id = "bt"  value="Add"></td>
+                  <td>  <input type="button" id = "bt"  value="Total"></td>
+                
+                </tr>
+            </table>
+</div>
+</div>
+</body>
+    </html>
